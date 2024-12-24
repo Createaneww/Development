@@ -1,0 +1,1 @@
+alert("Are you sure ? What to reload")
