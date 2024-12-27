@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms -- Lets fill them</title>
+</head>
+<body>
+    <h1>Form to apply for sigma webdev</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter Your username</label>
+            <input type="text" id ="username" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" id="male"   name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"   value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+            <label for="subscribe">Subscribe to news Letter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter description </label>
+            <br>
+            <textarea name="comment" rows="4" cols="50">
+          </textarea>
+        </div>
+
+        <div>
+            <label for="Vegetables">Choose your favourite Vegetable</label>
+            <select name="Vegetables">
+                <option value="tomato">Tomato</option>
+                <option value="potato">Potato</option>
+                <option value="ladyfinger">Lady finger</option>
+            </select>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
