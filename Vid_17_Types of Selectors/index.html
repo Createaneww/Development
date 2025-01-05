@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* class selector */
+        .red{
+            background-color: aqua;
+        }
+        /* id selector */
+        #Green{
+            background-color: green;
+        }
+        /* Childe selector yaha direct child hoona chahiye*/
+        div > p {
+            color: chartreuse;
+        }
+        /* Descendent Selector */
+        div p{
+            background-color: black;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: deeppink;
+        }
+        a:link{
+            color:chocolate;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: gold;
+        }
+        p:first-child{
+            background-color: rgb(213, 255, 4);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </div>
+    <div class="red">I am Div
+        <article>
+        <p>i am paragraph of div</p>
+    </article>
+    </div>
+    <div>My Name is Parth</div>
+    <div id="Green">My surname is Patel</div>
+    <div>My age is 21</div>
+    
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.instagram.com">Go to Instagram</a>
+    
+</body>
+</html>
