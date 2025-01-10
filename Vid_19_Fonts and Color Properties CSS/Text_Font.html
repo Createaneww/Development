@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS color and Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap');
+        p{
+            font-family: 'Courier New', Courier, monospace, Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Playwrite AU VIC Guides", serif;
+            font-style: oblique;
+            font-weight: 100;
+            color: rgb(255, 25, 247);
+            font-size: 15px;
+            line-height: 4;
+        }
+        h1{
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline ;
+            text-decoration-color: chartreuse;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 10px;
+            /* text-indent: 200px; ye property text ko move karti he */
+        }
+        .Lorem{
+            border: 6px solid red;
+            width: 145px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1> fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a video on Fonts</p>
+        <p class="Lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eum voluptatem placeat perferendis fuga error sunt reprehenderit ad nam saepe atque dolorum quae, ullam odio porro earum ratione, nemo veniam repudiandae sequi iste? Voluptatibus magni saepe veritatis impedit repudiandae delectus sunt fugit repellendus molestias porro.</p>
+    </div>
+</body>
+</html>
