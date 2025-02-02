@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (orientation: landscape) {
+            body{
+                border: 2px solid yellow;
+            }
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blueviolet;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        /* @ media not|only mediaType and (expression){
+             CSS CODE;
+            {*/
+        .boxes{
+            display: flex;
+            
+        }
+        .box{
+            width: 240px;
+            height: 134px;
+            background-color: aqua;
+            margin: 12px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a red body guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
