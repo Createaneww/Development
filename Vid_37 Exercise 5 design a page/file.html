@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Page design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            color: rgb(255, 247, 0);
+            background-color: black;
+            padding: 12px 43px 12px 150px;
+            list-style: none;
+            width: 100vw;
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        .middlepart{
+            position: absolute;
+            top: 70px;
+            left: 1cm;
+            right: 1cm;
+            width: 95vw;
+            height: 71vh;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        .box1{
+            position: absolute;
+            top: 116px;
+            left: 157px;
+            width: 25vw;
+            height: 34vh;
+            border: 2px solid red;
+            background-color: red;
+        }
+        .box2{
+            position: absolute;
+            top: 116px;
+            right: 157px;
+            width: 25vw;
+            height: 34vh;
+            border: 2px solid red;
+            background-color: red;
+        }
+        .rbox{
+            background-color: chartreuse;
+            position: absolute;
+            top: 680px;
+            left: 7cm;
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 80px;
+            width: 790px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contant</li>
+            <li>About us</li>
+            <li>More information</li>
+        </ul>
+    </div>
+</header>
+
+    <div class="middlepart">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="rbox">Hey I am a sigma WebDevloper</div>
+
+    <footer>
+        <div></div>
+    </footer>
+</body>
+</html>
