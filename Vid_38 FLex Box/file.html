@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .containers{
+            margin: 12px;
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* align-content: center; */
+            /* flex-direction: column-reverse; */
+            /* There is no justify-item in flex box */
+            /* flex-wrap: wrap; */
+             flex-flow: row wrap;  
+            /*this property help to set two things in a line 1-flex-direction and flex-wrap */
+            /* gap: 35px; */
+            row-gap: 19px;
+            column-gap: 19px;
+        }
+        .items{
+            flex-grow:1;
+            padding-top: 36px;
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 17px; */
+            background-color: aqua;
+            text-align: center;
+        }
+        .items1{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="containers">
+            <div class="items items1">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">5</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+        </div>
+    </main>
+</body>
+</html>
