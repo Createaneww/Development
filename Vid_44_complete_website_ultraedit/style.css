@@ -1,0 +1,147 @@
+.logo img{
+    width: 165px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+}
+.right ul{
+    display: flex;
+    gap: 23px;
+}
+.right ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+.right ul li span{
+    padding: 0px 5px;
+}
+.line1{
+    text-align: center;
+    font-family: poppins;
+    font-size: 48px;
+    margin-top: 90px;
+}.line2{
+    font-family: poppins;
+    font-size: 23px;
+    text-align: center;
+    padding: 12px;
+}
+.butt{
+    text-align: center;
+    padding: 15px;
+}
+button{
+    border: 1px solid;
+    border-radius: 7px;
+    background-color: #00b6d1;
+    padding: 12px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+
+}
+.CONTAINER{
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 200px;
+}
+.anotherlogo img{
+    width: 83px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    row-gap: 120px;
+    column-gap: 268px;
+    position: absolute;
+    right: 450px;
+    
+}
+.petti{
+    border-radius: 7px;
+    width: 320px;
+    height: 200px;
+    background-color: #f9f9f9;
+}
+.one{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.two{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.three{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.four{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.five{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.six{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.seven{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.eight{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.nine{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.ten{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.touchbut button{
+    border-radius: 6px;
+    margin-top: 36px;
+    padding: 9px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: #5cb85c;
+    margin: 12px 0; 
+}
+.touchbut button a{
+    text-decoration:none ;
+    color: #f9f9f9;
+}
+@media screen and (max-width: 1145px){
+    .grids{
+    
+       grid-template-columns: 1fr;
+        
+    }
+    
+}
