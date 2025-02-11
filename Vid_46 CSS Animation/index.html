@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 50vh;
+            width: 40vw;
+        }
+        .box{
+            font-size: xx-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: crimson;
+            height: 25vh;
+            width: 20vw;
+            animation: identifier;
+            animation-duration: 2s;
+            animation-timing-function: ease-incubic-bezier(0, 1.52, 1, 1.7);
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes ParthKeSath {
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: chartreuse;
+                transform: translateX(250px);
+            }
+        }
+        @keyframes identifier {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(290deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(350deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        BOX
+        </div>
+    </div>
+</body>
+</html>
