@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit & Object-Cover</title>
+    <style>
+        .box{
+            width: 486px;
+            height: 485px;
+            border: 2px solid;
+            background-color: beige;
+            background-position: center;
+            background-image: url("https://tse4.mm.bing.net/th?id=OIP.6f5ZEeT1bM05vEOyFk2a7AHaHa&pid=Api&P=0&h=180");
+            background-repeat: no-repeat;
+        }
+        .box img{
+        width: 525px;
+        height: 250px;
+        object-fit: contain;
+        object-position: 10px 20px;
+        }
+        .anotherimg img{
+            /* filter: blur(10px); */
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="https://tse4.mm.bing.net/th?id=OIP.6f5ZEeT1bM05vEOyFk2a7AHaHa&pid=Api&P=0&h=180" alt=""> -->
+    </div>
+    <br>
+    <div class="anotherimg">
+        <img src="https://sp.yimg.com/ib/th?id=OIP.uoa-pARZtksq6F7eMJn4MAHaHa&pid=Api&w=148&h=148&c=7&dpr=2&rs=1" alt="">
+    </div>
+</body>
+</html>
