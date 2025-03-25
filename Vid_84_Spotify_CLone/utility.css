@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+.justifyContent{
+    justify-content: center;
+}
+.alignContent{
+    align-items: center;
+}
+.border{
+    /* border: 2px solid red; */
+    margin: 5px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1a1a1a;
+}
