@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Nadi Pariksha</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.2s ease-in-out;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .show-result {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        .instructions {
+            text-align: left;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .diet-plan, .yoga-plan {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.6;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+        .diet-plan {
+            background: #ffefd5;
+        }
+        .diet-plan h4, .yoga-plan h4 {
+            color: #d35400;
+            margin-bottom: 8px;
+        }
+        .yoga-plan {
+            background: #e3f2fd;
+        }
+        .yoga-plan img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Self Nadi Pariksha</h2>
+        
+        <div class="instructions">
+            <h3>How to Perform Self Nadi Pariksha:</h3>
+            <ul>
+                <li>Sit in a relaxed position and stay calm for a few minutes.</li>
+                <li>Place the index, middle, and ring fingers of your right hand on the inner wrist of your left hand (just below the thumb).</li>
+                <li>Press gently to feel the pulse rhythm.</li>
+                <li>Count the beats for 15 seconds and multiply by 4 to get BPM (Beats Per Minute).</li>
+                <li>Enter the calculated BPM and select your gender to analyze your Nadi type.</li>
+            </ul>
+        </div>
+
+        <label for="gender">Select Your Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="pulse">Enter Your Pulse Rate (BPM):</label>
+        <input type="number" id="pulse" placeholder="e.g., 75">
+        <button onclick="analyzePulse()">Analyze</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function analyzePulse() {
+            let pulseRate = parseInt(document.getElementById("pulse").value);
+            let gender = document.getElementById("gender").value;
+            let resultDiv = document.getElementById("result");
+            let result = "";
+
+            if (!pulseRate || pulseRate < 40 || pulseRate > 180) {
+                result = "Please enter a valid pulse rate between 40 and 180 BPM.";
+            } else {
+                let adjustedPulseRate = gender === "female" ? pulseRate - 5 : pulseRate;
+                
+                if (adjustedPulseRate >= 80) {
+                    result = `<b>Vata Dosha</b> - You may experience anxiety, dryness, or cold hands.<br>
+                    <div class='diet-plan'>
+                        <h4>🍜 Suggested Diet:</h4>
+                        - Warm, oily foods like soups, nuts, ghee, and root vegetables.<br>
+                        - Avoid raw foods and excessive caffeine.
+                    </div>
+                    <div class='yoga-plan'>
+                        <h4>🧘 Yoga Poses:</h4>
+                        - Balasana (Child's Pose) <br>
+                        - Tadasana (Mountain Pose) <br>
+                        - Gentle Pranayama <br>
+                        <img src='child-pose.jpg' alt='Child Pose'>
+                    </div>`;
+                } else if (adjustedPulseRate >= 70) {
+                    result = `<b>Pitta Dosha</b> - You may have good digestion but could experience acidity.<br>
+                    <div class='diet-plan'>
+                        <h4>🥗 Suggested Diet:</h4>
+                        - Cooling foods like cucumber, melons, coconut water, and leafy greens.<br>
+                        - Reduce spicy and fried foods.
+                    </div>
+                    <div class='yoga-plan'>
+                        <h4>🧘 Yoga Poses:</h4>
+                        - Shavasana (Corpse Pose) <br>
+                        - Moon Salutations <br>
+                        - Chandra Bhedana (Left Nostril Breathing) <br>
+                        <img src='shavasana.jpg' alt='Shavasana'>
+                    </div>`;
+                } else {
+                    result = `<b>Kapha Dosha</b> - You may have a strong immune system but could feel sluggish.<br>
+                    <div class='diet-plan'>
+                        <h4>🍵 Suggested Diet:</h4>
+                        - Light, warm foods with spices like ginger, turmeric, and pepper.<br>
+                        - Avoid dairy and heavy foods.
+                    </div>
+                    <div class='yoga-plan'>
+                        <h4>🧘 Yoga Poses:</h4>
+                        - Surya Namaskar (Sun Salutation) <br>
+                        - Warrior Pose <br>
+                        - Bhastrika Pranayama (Bellows Breath) <br>
+                        <img src='sun-salutation.jpg' alt='Sun Salutation'>
+                    </div>`;
+                }
+            }
+            resultDiv.innerHTML = result;
+            resultDiv.classList.add("show-result");
+        }
+    </script>
+</body>
+</html>
