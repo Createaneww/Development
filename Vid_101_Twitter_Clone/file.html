@@ -13,94 +13,95 @@
 
 </head>
 
-<body class="bg-black text-white">
-    <div class="flex container mx-auto my-4">
-        <div class="one w-[70%]">
-            <div class="logo invert">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="m-auto my-1 w-9  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-                    <g>
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </g>
-                </svg>
-
-            </div>
-            <div class="sidebar flex justify-end">
-                <ul class="flex flex-col text-2xl  px-10 font-bold">
-
-                    <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer ">
-                        <span class="material-symbols-outlined">home</span>Home</li>
+<body class="bg-black text-white min-h-screen">
+    <div class="flex md:container mx-auto my-4">
+        
+        <div class="one w-16 md:w-[70%] sticky top-0 h-screen">
+            <div class="sidebar flex md:items-end flex-col">
+                <div class="logo invert self-start mx-16">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="m-auto my-1 w-9  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+    
+                </div>
+                <ul class="flex flex-col text-2xl spave-y-3  md:px-11 font-bold w-full">
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer ">
+                        <span class="material-symbols-outlined">home</span> <span class="hidden md:block">Home</span></li>
+
+                    <li
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Explore</li>
+                         <span class="hidden md:block">Explore</span></li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Notifications</li>
+                        <span class="hidden md:block">Notifications</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Messages</li>
+                        <span class="hidden md:block">Messages</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Grok</li>
+                        <span class="hidden md:block">Grok</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Bookmarks</li>
+                        <span class="hidden md:block">Bookmarks</span></li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/work_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Jobs</li>
+                        <span class="hidden md:block">Jobs</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Communities</li>
+                        <span class="hidden md:block">Communities</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Premium</li>
+                        <span class="hidden md:block">Premium</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/verified_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Verified Orgs</li>
+                        <span class="hidden md:block">Verified Orgs</span> </li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        Profile</li>
+                        <span class="hidden md:block">Profile</span></li>
 
                     <li
-                        class="flex justify-start items-center gap-2 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 hover:cursor-pointer">
+                        class="flex md:justify-start items-center gap-2 justify-center md:w-fit hover:bg-gray-900 hover:rounded-full  md:px-5 py-3 hover:cursor-pointer">
                         <span class="material-symbols-outlined"><img
                                 src="svgs/more_horiz_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                        More</li>
+                        <span class="hidden md:block">More</span> </li>
                         <li class="flex justify-center p-[12px]">
-                            <div class="button bg-white text-black px-[85px] py-[12px] rounded-[5rem]">
+                            <div class="hidden md:block button bg-white text-black px-[85px] py-[12px] rounded-[5rem]">
                                 <button>Post</button>
                             </div>
                         </li>
@@ -109,12 +110,14 @@
             </div>
         </div>
 
+
+
 <!-- two -->
         <div class="two w-full border-[1px] border-x-[#2f3336] border-y-black">
 
             <div class="top flex justify-between ">
-                <div class="left font-bold  bg-black w-1/2 py-[1rem] flex justify-center hover:bg-[#16181c] cursor-pointer border-[1px] border-x-[#2f3336] border-y-[#2f3336] border-t-black">For you</div>
-                <div class="right font-bold  border-[1px] border-x-[#2f3336] border-y-[#2f3336] border-t-black bg-black w-1/2 py-[1rem] flex justify-center hover:bg-[#16181c]">Following</div>
+                <div class="left font-bold  bg-black w-1/2 py-[1rem] flex justify-center hover:bg-[#16181c] cursor-pointer border-[1px] border-x-[#2f3336] border-y-[#2f3336] border-t-black sticky top-0">For you</div>
+                <div class="right font-bold  border-[1px] border-x-[#2f3336] border-y-[#2f3336] border-t-black bg-black w-1/2 py-[1rem] flex justify-center hover:bg-[#16181c] sticky top-0 ">Following</div>
                 
             </div>
             <div class="whatishap flex gap-4 border-[1px] border-x-[#2f3336] border-y-[#2f3336]">
@@ -137,7 +140,7 @@
                             <img class="rounded-xl" src="https://pbs.twimg.com/media/GYm-zi8XEAA9r7A?format=png&name=small" alt="">
                         </div>
                         <div class="icons flex mx-3 gap-[2.9rem] text-gray-600">
-                            <div class="icon flex justify-center items-center gap-1">
+                            <div class="icon flex justify-center items-center gap-1 ">
                                 <span><img src="svgs/chat_bubble_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>91K
                             </div>
                             <div class="icon flex justify-center items-center gap-1">
@@ -193,6 +196,40 @@
 </div>
 
 </div>
+<div class="post border-[1px] border-x-[#2f3336] border-y-[#2f3336]">
+    <div class="flex">
+    <div class="image m-5">
+        <img class="w-12" src="https://i.pinimg.com/736x/1b/2a/7f/1b2a7f4640357abf98edc4848ed9c6b3.jpg" alt="">
+    </div>
+    <div class="content my-3">
+        <span class="font-bold hover:underline cursor-pointer">Elon Musk </span> <span class="text-gray-600 cursor-pointer">@elonmusk·3h</span>
+
+        <div>AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat.</div>
+        <div class="postimg m-4 ml-0">
+            <img class="rounded-xl" src="https://pbs.twimg.com/media/GYm-zi8XEAA9r7A?format=png&name=small" alt="">
+        </div>
+        <div class="icons flex mx-3 gap-[2.9rem] text-gray-600">
+            <div class="icon flex justify-center items-center gap-1">
+                <span><img src="svgs/chat_bubble_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>91K
+            </div>
+            <div class="icon flex justify-center items-center gap-1">
+                <span><img src="svgs/frame_reload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>5.1K
+            </div>
+            <div class="icon flex justify-center items-center gap-1">
+                <span><img src="svgs/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>154K
+            </div>
+            <div class="icon flex justify-center items-center gap-1">
+                <span><img src="svgs/equalizer_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>45K
+            </div>
+            <div class="icon flex gap-1">
+                <img src="svgs/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="svgs/upload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
 
 
 
@@ -200,11 +237,11 @@
  </div>
 <!-- third -->
 
-        <div class="three w-full mx-3">
+        <div class="three  w-full mx-3 hidden md:block">
             <div class="search">
                 <input type="text" class="w-[20rem] rounded-full bg-[#16181c]  p-2 m-3" placeholder="search">
             </div>
-            <div class="whats w-[20rem]  m-5 bg-[#16181c] w-1/2 p-5 rounded-xl space-y-3">
+            <div class="whats sticky top-0 m-5 bg-[#16181c] w-1/2 p-5 rounded-xl space-y-3">
                 <h1 class="text-xl font-bold px-3">What's Happening</h1>
                 <div class="items  p-3 hover:bg-gray-950 cursor-pointer">
                     <div class=" text-sm text-white">What a Company</div>
