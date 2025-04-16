@@ -3,9 +3,34 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
   const [showbtn, setshowbtn] = useState(false)
+  const [todos, settodos] = useState([
+    {
+    title:"Hey",
+    desc:"I am good Todo"
+    },
+    {
+    title:"Hey another todo",
+    desc:"I am good Todo too"
+    },
+    {
+    title:"Hey shopping todo",
+    desc:"I am good Todo too and a groceory todo"
+    }
+    
+  ])
+
+  const Todo = ({todo})=>{return(
+    <>
+    <div className="m-3 border border-1 border-purple-400">
+    <div className="todo">{todo.title}</div>
+    <div className="todo">{todo.desc}</div>
+    </div>
+    </>
+  )} 
 
   return (
     <>
@@ -18,7 +43,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      {/* {showbtn?<button>I will be shown will shown when second btn is clicked</button>:""} */}
+      {todos.map(todo=>{
+        return <Todo key={todo.title} todo = {todo}/>
+      })}
+      
+           {/* {showbtn?<button>I will be shown will shown when second btn is clicked</button>:""} */}
 {showbtn && <button>I will be shown will shown when second btn is clicked</button>}
 
       <div className="card">
