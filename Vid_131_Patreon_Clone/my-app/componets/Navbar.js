@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className='bg-black text-white flex justify-between items-center pt-2'>
       <Link href={"/"} className='LOGO ml-4 p-2 font-bold text-2xl flex justify-center items-center'>
-        <img width={45} src="/tea.gif" alt="" />
+        <img className='invertImg' width={45} src="/tea.gif" alt="" />
         <span>Get me a Chai</span>
         </Link>
       {/* <ul className='flex gap-5 p-5'>
