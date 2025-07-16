@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
     <nav className='flex justify-between items-center bg-gradient-to-t from-[#3e3e3e] to-[#f4f4f4] bg-clip-text text-xl text-transparent mt-10'>
   <div className={`logo ml-10 font-bold text-3xl ${usepoppins.className}`}>
-        <Link href="/">SHORTY_URL</Link>
+        <Link href="/">🔗 SHORTY URLs</Link>
       </div>
       <ul className={`flex gap-5 justify-center items-center font-bold mr-10 ${usepoppins.className}` }>
         <Link href="/"><li>Home</li></Link>
