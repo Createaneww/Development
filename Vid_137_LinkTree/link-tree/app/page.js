@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-[#254f1a] min-h-[102vh] grid grid-cols-2 ">
+      <section className="bg-[#254f1a] min-h-screen grid grid-cols-2 ">
         <div className="flex flex-col items-center justify-center ml-[5vw]">
           <p className="text-[#d2e823] font-extrabold text-[80px] text-left">
             Everything you are. In one,
@@ -38,9 +38,7 @@ export default function Home() {
       </section>
 
 
-      <section className="bg-[#4f301a] min-h-[100vh]">
-        I am home page
-      </section>
+     
     </>
   );
 }
