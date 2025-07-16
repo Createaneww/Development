@@ -2,6 +2,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import localFont from "next/font/local"
+import Link from 'next/link';
 
 const poppins = localFont({
   src: "./fonts/Poppins-ExtraBold.ttf",
@@ -117,7 +118,7 @@ const CardSpotlight = () => {
           <div className='flex flex-col gap-4'>
 
             <p className='text-4xl text-white font-bold'>The Best url shortner in the market</p>
-            <p className='text-xl text-white'>We are the most straightforward URL shortener in the world.
+            <p className='text-xl text-white space-y-6'>We are the most straightforward URL shortener in the world.
               Most URL shorteners track your data or require you to sign up.
               We respect your privacy — no tracking, no logins, just clean, fast link shortening.
               That’s why we built this URL shortener — for users who value simplicity and privacy.</p>
@@ -131,7 +132,7 @@ const CardSpotlight = () => {
           onBlur={handleBlur2}
           onMouseEnter={handleMouseEnter2}
           onMouseLeave={handleMouseLeave2}
-          className='relative flex h-[50vh] w-150 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-r from-[#3e3e3e] to-slate-950 px-8 py-16 shadow-4xl mr-20'
+          className='relative flex h-[50vh] w-150 justify-center overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-r from-[#3e3e3e] to-slate-950 px-8 py-10 shadow-4xl mr-20'
         >
           <div
             className='pointer-events-none absolute -inset-px transition duration-300'
@@ -140,7 +141,28 @@ const CardSpotlight = () => {
               background: `radial-gradient(600px circle at ${card2State.position.x}px ${card2State.position.y}px, rgba(255,182,255,.1), transparent 40%)`,
             }}
           />
-          <p className='text-sm text-gray-200'>Card 2</p>
+          <div className="flex flex-col text-white space-y-8">
+  <h2 className="text-4xl  font-bold">📊 Link Analytics Preview</h2>
+
+  <div className="space-y-2 text-sm sm:text-base mt-5">
+    <p><span className="font-semibold">🔗 Total Clicks:</span> 1,243</p>
+    <p><span className="font-semibold">🌍 Top Countries:</span> India, USA, UK</p>
+    <p><span className="font-semibold">⏱ Last Clicked:</span> 2 hours ago</p>
+  </div>
+
+  <Link href="/generate">
+          <span className='relative inline-block overflow-hidden rounded-full p-[1px]'>
+      <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3e3e3e_0%,#393BB2_50%,#E2CBFF_100%)]' />
+      <div className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-4xl bg-gray-950 px-7 py-3 font-medium text-gray-50 backdrop-blur-3xl'>
+    Generate Urls
+      </div>
+    </span></Link>
+
+  <p className="text-xs text-gray-400 pt-2">
+    Track click performance in real-time — no sign up required.
+  </p>
+</div>
+
         </div>
       </div>
     </>
